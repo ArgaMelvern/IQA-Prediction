@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>IQA Prediction</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body style="background-color: rgb(56, 247, 183);">
+        <header class="main-header">
+            <h1>IQA Prediction</h1>
+            <form action="{{url_for('predict')}}" method="post">
+                <table>
+                    <tr>
+                        <th>PM10</th>
+                        <th>PM25</th>
+                        <th>SO2</th>
+                        <th>CO</th>
+                        <th>O3</th>
+                        <th>NO2</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+                <input type="submit" value = "Predict" class="btn btn-primary btn-block btn-large">
+            <h2> IQA {{ IQA_value }}</h2>>
+        </header>
+    </body>
+</html>
+
+
