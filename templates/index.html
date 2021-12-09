@@ -9,6 +9,7 @@
 
     <body style="background-color: rgb(56, 247, 183);">
         <header class="main-header">
+            <div class="login">
             <h1>IQA Prediction</h1>
             <form action="{{url_for('predict')}}" method="post">
                 <table>
@@ -21,16 +22,17 @@
                         <th>NO2</th>
                     </tr>
                     <tr>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
-                        <td><input type="text"></td>
+                        <td><input type="text" name="PM10" placeholder="PM10" required="required"></td>
+                        <td><input type="text" name="PM25" placeholder="PM25" required="required"></td>
+                        <td><input type="text" name="SO2" placeholder="SO2" required="required"></td>
+                        <td><input type="text" name="CO" placeholder="CO" required="required"></td>
+                        <td><input type="text" name="O3" placeholder="O3" required="required"></td>
+                        <td><input type="text" name="NO2" placeholder="NO2" required="required"></td>
                     </tr>
                 </table>
                 <input type="submit" value = "Predict" class="btn btn-primary btn-block btn-large">
             <h2> IQA {{ IQA_value }}</h2>>
+            </div>
         </header>
     </body>
 </html>

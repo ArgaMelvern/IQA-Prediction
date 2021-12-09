@@ -79,7 +79,7 @@ def predict():
     data.append(float(NO2)) 
     
     prediction = model.predict([data])
-    output = int(prediction[0])
+    output = float(prediction[0])
 
     return render_template('index.html', IQA_value=output)
 
