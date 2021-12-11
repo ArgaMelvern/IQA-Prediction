@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>IQA Prediction</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
 
-    <body style="background-color: rgb(56, 247, 183);">
-        <header class="main-header">
-            <div class="login">
-            <h1>IQA Prediction</h1>
-            <form action="{{url_for('predict')}}" method="post">
-                <table>
-                    <tr>
-                        <th>PM10</th>
-                        <th>PM25</th>
-                        <th>SO2</th>
-                        <th>CO</th>
-                        <th>O3</th>
-                        <th>NO2</th>
-                    </tr>
-                    <tr>
-                        <td><input type="text" name="PM10" placeholder="PM10" required="required"></td>
-                        <td><input type="text" name="PM25" placeholder="PM25" required="required"></td>
-                        <td><input type="text" name="SO2" placeholder="SO2" required="required"></td>
-                        <td><input type="text" name="CO" placeholder="CO" required="required"></td>
-                        <td><input type="text" name="O3" placeholder="O3" required="required"></td>
-                        <td><input type="text" name="NO2" placeholder="NO2" required="required"></td>
-                    </tr>
-                </table>
-                <input type="submit" value = "Predict" class="btn btn-primary btn-block btn-large">
-            <h2> IQA {{ IQA_value }}</h2>>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IQA Prediction</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgb(56, 247, 183);">
+
+    <header class="main-header">
+        <div class="login">
+            <div class="title">
+                <h1>IQA Prediction</h1>
             </div>
-        </header>
-    </body>
+            <div class="belakang">
+                <div class="input-data">
+                    <form action="{{url_for('predict')}}" method="post">
+                        <table>
+                            <tr>
+                                <th>PM10</th>
+                                <th>PM25</th>
+                                <th>SO2</th>
+                                <th>CO</th>
+                                <th>O3</th>
+                                <th>NO2</th>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="PM10" placeholder="PM10" required="required"></td>
+                                <td><input type="text" name="PM25" placeholder="PM25" required="required"></td>
+                                <td><input type="text" name="SO2" placeholder="SO2" required="required"></td>
+                                <td><input type="text" name="CO" placeholder="CO" required="required"></td>
+                                <td><input type="text" name="O3" placeholder="O3" required="required"></td>
+                                <td><input type="text" name="NO2" placeholder="NO2" required="required"></td>
+                            </tr>
+                        </table>
+                        <div class="submit">
+                            <input type="submit" value="Predict" class="btn btn-primary btn-block btn-large">
+                        </div>
+                </div>
+
+                <div class="result">
+                    <h2> IQA {{ IQA_value }}</h2>>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+</body>
+
 </html>
-
-

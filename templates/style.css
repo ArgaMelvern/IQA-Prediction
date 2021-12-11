@@ -1,0 +1,42 @@
+    .title {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .input-data {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
+  }
+  
+  .result {
+    margin-top: 5rem;
+    margin-right: 30rem;
+    margin-left: 30rem;
+    padding: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: blanchedalmond;
+    border-radius: 2rem;
+  }
+  
+  input {
+    margin-right: 1rem;
+  }
+  
+  .belakang {
+    margin-top: 3rem;
+    background-color: rgb(125, 255, 143);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  
